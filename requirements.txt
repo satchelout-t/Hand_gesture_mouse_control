@@ -1,0 +1,10 @@
+# mediapipe depends on opencv-contrib-python, which provides the same `cv2`
+# module. Installing opencv-python alongside it means whichever lands second
+# wins, silently overriding the pin -- so we depend on contrib alone.
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.14
+numpy==1.26.4
+pyautogui==0.9.54
+pycaw==20240210
+comtypes==1.4.5
+screen-brightness-control==0.23.0
